@@ -1,0 +1,12 @@
+K 15
+reviewboard:url
+V 31
+http://reviewboard.infoarena.ro
+K 10
+svn:ignore
+V 34
+config.php
+apache.conf
+backup.sql
+
+END

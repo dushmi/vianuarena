@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 28
+/dav-svn/!svn/ver/1193/trunk
+END
+db.sql
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/dav-svn/!svn/ver/1187/trunk/db.sql
+END
+apache.conf.sample
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/dav-svn/!svn/ver/1151/trunk/apache.conf.sample
+END
+.gitignore
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/dav-svn/!svn/ver/1177/trunk/.gitignore
+END
+.arcconfig
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/dav-svn/!svn/ver/1193/trunk/.arcconfig
+END
+config.php.sample
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/dav-svn/!svn/ver/1184/trunk/config.php.sample
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/dav-svn/!svn/ver/1177/trunk/Makefile
+END

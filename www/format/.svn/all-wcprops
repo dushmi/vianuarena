@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/dav-svn/!svn/ver/1189/trunk/www/format
+END
+format.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/dav-svn/!svn/ver/1189/trunk/www/format/format.php
+END
+list.php
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/dav-svn/!svn/ver/852/trunk/www/format/list.php
+END
+pager.php
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/dav-svn/!svn/ver/1164/trunk/www/format/pager.php
+END
+form.php
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/dav-svn/!svn/ver/1055/trunk/www/format/form.php
+END
+table.php
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/dav-svn/!svn/ver/1128/trunk/www/format/table.php
+END

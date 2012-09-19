@@ -1,0 +1,193 @@
+#! /usr/bin/env php
+<?php
+
+require_once(dirname($argv[0]) . "/utilities.php");
+require_once(IA_ROOT_DIR . "common/attachment.php");
+require_once(IA_ROOT_DIR . "common/db/attachment.php");
+db_connect();
+
+log_print("Checking attachment dir...");
+log_warn("This script consumes tons of memory so errors might occur");
+
+$res = db_query("SELECT `id`, `name`, `page`, `size` FROM ia_file");
+
+$extra_files = array_flip(glob(IA_ROOT_DIR . "attach/*"));
+$extra_atts = array();
+$total_files = count($extra_files);
+$total_atts = 0;
+$mismatched_sizes = array();
+
+// Check attachments.
+while ($att = db_next_row($res)) {
+    ++$total_atts;
+    $fname = attachment_get_filepath($att);
+    if (array_key_exists($fname, $extra_files)) {
+        unset($extra_files[$fname]);
+    } else {
+        $extra_atts[] = $att;
+        continue;
+    }
+    if (filesize($fname) != $att['size']) {
+        $att['file_size'] = filesize($fname);
+        $mismatched_sizes[] = $att;
+    }
+}
+
+// FIXME: check cache.
+$extra_files = array_keys($extra_files);
+
+if (count($extra_files) == 0 && count($extra_atts) == 0) {
+    log_print("Database and attach dir are in perfect sync, $total_files total files.");
+} else {
+    log_print("There are ".count($extra_files)." out of ".$total_files." disk files with no db entry.");
+    if (count($extra_files)) {
+        if (read_bool("Do you want to see a list?", false)) {
+            foreach ($extra_files as $file) {
+                log_print($file);
+            }
+        }
+        if (read_bool("Want to delete them?", false)) {
+            foreach ($extra_files as $file) {
+                unlink($file);
+            }
+        }
+    }
+
+    log_print("There are ".count($extra_atts)." out of ".$total_atts." db files with no disk file.");
+    if (count($extra_atts)) {
+        if (read_bool("Do you want to see a list?", false)) {
+            foreach ($extra_atts as $att) {
+                log_print("page ".$att['page']." name ".$att['name']);
+            }
+        }
+        if (read_bool("Want to delete them?", false)) {
+            foreach ($extra_atts as $att) {
+                attachment_delete_by_id($att['id']);
+            }
+        }
+    }
+}
+
+unset($extra_atts);
+unset($extra_files);
+
+if (count($mismatched_sizes) != 0) {
+    log_print('There are ' . count($mismatched_sizes) . ' files with ' .
+              'mismatching sizes on disk and in the db');
+    if (read_bool('Do you want to see a list?', false)) {
+        foreach ($mismatched_sizes as $att) {
+            log_print(sprintf('page %s name %s file_size %s db_size %s',
+                              $att['page'], $att['name'],
+                              $att['file_size'], $att['size']));
+        }
+    }
+    if (read_bool('Do you want to try to fix this?', false)) {
+        foreach ($mismatched_sizes as $att) {
+            if ($att['file_size'] == 0 && $att['size'] != 0) {
+                // File was likely uploaded when disk was out of space.
+                // Nothing we can do, delete it.
+                log_print(sprintf('Deleting attachment page %s name %s',
+                                  $att['page'], $att['name']));
+                attachment_delete_by_id($att['id']);
+                continue;
+            }
+
+            $safe_update = false;
+            if (starts_with($att['name'], 'grader_test') &&
+                $att['file_size'] == $att['size'] + 1) {
+                // A script was run that added missing trailing endlines
+                // to grader tests.
+                $safe_update = true;
+            }
+            if ($att['file_size'] != 0 && $att['size'] == 0) {
+                $safe_update = true;
+            }
+
+            if ($safe_update) {
+                $new_att = attachment_get_by_id($att['id']);
+                $new_att['size'] = $att['file_size'];
+                attachment_update($new_att['id'], $new_att['name'],
+                                  $new_att['size'], $new_att['mime_type'],
+                                  $new_att['page'], $new_att['user_id'],
+                                  $new_att['remote_ip_info']);
+                continue;
+            }
+            log_print(sprintf('I don\'t know how to handle attachment page ' .
+                              $att['page'] . ' name ' . $att['name']));
+        }
+    }
+} else {
+    log_print('Stored file sizes match those of the files on disk.');
+}
+
+if (read_bool("Check mimetypes (could take a long time)?", false)) {
+    $res = db_query("SELECT `id`, `name`, `page`, `mime_type` FROM ia_file");
+    $mismatched_mimetypes = array();
+    while ($att = db_next_row($res)) {
+        $fname = attachment_get_filepath($att);
+        if (!is_file($fname)) {
+            continue;
+        }
+        if (get_mime_type($fname) != $att['mime_type']) {
+            $att['file_mime_type'] = get_mime_type($fname);
+            $mismatched_mimetypes[] = $att;
+        }
+    }
+
+    if (count($mismatched_mimetypes) != 0) {
+        log_print('There are ' . count($mismatched_mimetypes) . ' files with ' .
+                  'mismatching mimetypes on disk and in the db');
+        if (read_bool('Do you want to see a list?', false)) {
+            foreach ($mismatched_mimetypes as $att) {
+                log_print(
+                    sprintf('page %s name %s file_mime_type %s db_mime_type %s',
+                            $att['page'], $att['name'],
+                            $att['file_mime_type'], $att['mime_type']));
+            }
+        }
+        if (read_bool('Do you want to update them?', false)) {
+            foreach ($mismatched_mimetypes as $att) {
+                $new_att = attachment_get_by_id($att['id']);
+                $new_att['mime_type'] = $att['file_mime_type'];
+                attachment_update($new_att['id'], $new_att['name'],
+                                  $new_att['size'], $new_att['mime_type'],
+                                  $new_att['page'], $new_att['user_id'],
+                                  $new_att['remote_ip_info']);
+            }
+        }
+    } else {
+        log_print('Stored mime_types match those of the files on disk.');
+    }
+}
+
+if (read_bool("Enforce permissions?", false)) {
+    $defowner = null;
+    if (preg_match('/\/home\/([^\/]*)/', IA_ROOT_DIR, $matches)) {
+        $defowner = $matches[1];
+    }
+    $userown = read_line("Owning user?", $defowner);
+    $groupown = read_line("Owning group?", $defowner);
+    $errs = false;
+    $files = glob(IA_ROOT_DIR . "attach/*");
+    foreach ($files as $file) {
+        $err = array();
+        if (@chmod($file, 0640) == false) {
+            $err[] = "chmod";
+        }
+        if (@chown($file, $userown) == false) {
+            $err[] = "chown";
+        }
+        if (@chgrp($file, $groupown) == false) {
+            $err[] = "chgrp";
+        }
+        $errs |= $err;
+        if ($err) {
+            log_print("Failed ".implode(', ', $err)." on $file");
+        }
+    }
+    if ($errs) {
+        log_print("There were some errors. You should run this as root.");
+    }
+}
+
+?>

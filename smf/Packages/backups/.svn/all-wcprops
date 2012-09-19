@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/dav-svn/!svn/ver/852/trunk/smf/Packages/backups
+END
+.htaccess
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/dav-svn/!svn/ver/639/trunk/smf/Packages/backups/.htaccess
+END
+index.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/dav-svn/!svn/ver/852/trunk/smf/Packages/backups/index.php
+END

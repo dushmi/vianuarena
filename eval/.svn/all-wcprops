@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/dav-svn/!svn/ver/1191/trunk/eval
+END
+BaseGrader.php
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/dav-svn/!svn/ver/1191/trunk/eval/BaseGrader.php
+END
+Exceptions.php
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/dav-svn/!svn/ver/1191/trunk/eval/Exceptions.php
+END
+eval
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/dav-svn/!svn/ver/1191/trunk/eval/eval
+END
+config.php.sample
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/dav-svn/!svn/ver/1183/trunk/eval/config.php.sample
+END
+ClassicGrader.php
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/dav-svn/!svn/ver/1191/trunk/eval/ClassicGrader.php
+END
+download.php
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/dav-svn/!svn/ver/1191/trunk/eval/download.php
+END
+utilities.php
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/dav-svn/!svn/ver/1191/trunk/eval/utilities.php
+END

@@ -1,0 +1,287 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/dav-svn/!svn/ver/1186/trunk/www/macros
+END
+macro_rankings.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/dav-svn/!svn/ver/1164/trunk/www/macros/macro_rankings.php
+END
+macro_blogcommentcount.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/dav-svn/!svn/ver/852/trunk/www/macros/macro_blogcommentcount.php
+END
+macro_toprated.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/dav-svn/!svn/ver/1164/trunk/www/macros/macro_toprated.php
+END
+macro_taskparam.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/dav-svn/!svn/ver/1185/trunk/www/macros/macro_taskparam.php
+END
+macro_youtubevideo.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/dav-svn/!svn/ver/959/trunk/www/macros/macro_youtubevideo.php
+END
+macro_debug.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/dav-svn/!svn/ver/934/trunk/www/macros/macro_debug.php
+END
+macro_tasksubmit.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/dav-svn/!svn/ver/1047/trunk/www/macros/macro_tasksubmit.php
+END
+macro_roundtimer.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/dav-svn/!svn/ver/1135/trunk/www/macros/macro_roundtimer.php
+END
+macro_tableofcontents.php
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/dav-svn/!svn/ver/934/trunk/www/macros/macro_tableofcontents.php
+END
+macro_roundstatus.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/dav-svn/!svn/ver/852/trunk/www/macros/macro_roundstatus.php
+END
+macro_roundregister.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/dav-svn/!svn/ver/1007/trunk/www/macros/macro_roundregister.php
+END
+macro_grep.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/dav-svn/!svn/ver/949/trunk/www/macros/macro_grep.php
+END
+macro_gallery.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/dav-svn/!svn/ver/934/trunk/www/macros/macro_gallery.php
+END
+macro_solvedtasks.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/dav-svn/!svn/ver/852/trunk/www/macros/macro_solvedtasks.php
+END
+macro_smflink.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/dav-svn/!svn/ver/852/trunk/www/macros/macro_smflink.php
+END
+macro_remotebox.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/dav-svn/!svn/ver/1032/trunk/www/macros/macro_remotebox.php
+END
+macro_algorithmtags.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/dav-svn/!svn/ver/1099/trunk/www/macros/macro_algorithmtags.php
+END
+macro_smftopics.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/dav-svn/!svn/ver/1032/trunk/www/macros/macro_smftopics.php
+END
+macro_infoarenapaypal.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/dav-svn/!svn/ver/1186/trunk/www/macros/macro_infoarenapaypal.php
+END
+macro_calendar.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/dav-svn/!svn/ver/1063/trunk/www/macros/macro_calendar.php
+END
+macro_rounds.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/dav-svn/!svn/ver/852/trunk/www/macros/macro_rounds.php
+END
+macro_blogposts.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/dav-svn/!svn/ver/852/trunk/www/macros/macro_blogposts.php
+END
+macro_triluliluvideo.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/dav-svn/!svn/ver/959/trunk/www/macros/macro_triluliluvideo.php
+END
+macro_user.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/dav-svn/!svn/ver/852/trunk/www/macros/macro_user.php
+END
+macro_userimage.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/dav-svn/!svn/ver/1155/trunk/www/macros/macro_userimage.php
+END
+macro_userwidget.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/dav-svn/!svn/ver/1157/trunk/www/macros/macro_userwidget.php
+END
+macro_roundlist.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/dav-svn/!svn/ver/1045/trunk/www/macros/macro_roundlist.php
+END
+macro_include.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/dav-svn/!svn/ver/985/trunk/www/macros/macro_include.php
+END
+macro_smftopic.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/dav-svn/!svn/ver/1032/trunk/www/macros/macro_smftopic.php
+END
+macro_taskopen.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/dav-svn/!svn/ver/886/trunk/www/macros/macro_taskopen.php
+END
+macro_blogpreview.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/dav-svn/!svn/ver/969/trunk/www/macros/macro_blogpreview.php
+END
+macro_tasks.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/dav-svn/!svn/ver/1173/trunk/www/macros/macro_tasks.php
+END
+macro_failedtasks.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/dav-svn/!svn/ver/852/trunk/www/macros/macro_failedtasks.php
+END
+macro_userinfo.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/dav-svn/!svn/ver/1184/trunk/www/macros/macro_userinfo.php
+END
+macro_smfcomments.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/dav-svn/!svn/ver/1032/trunk/www/macros/macro_smfcomments.php
+END
+macro_stars.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/dav-svn/!svn/ver/1134/trunk/www/macros/macro_stars.php
+END
+macro_preoni_tasks.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/dav-svn/!svn/ver/852/trunk/www/macros/macro_preoni_tasks.php
+END
+macro_newsletterrating.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/dav-svn/!svn/ver/987/trunk/www/macros/macro_newsletterrating.php
+END
+macro_distributionchart.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/dav-svn/!svn/ver/1031/trunk/www/macros/macro_distributionchart.php
+END
+macro_blogtags.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/dav-svn/!svn/ver/852/trunk/www/macros/macro_blogtags.php
+END
+macro_googlevideo.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/dav-svn/!svn/ver/959/trunk/www/macros/macro_googlevideo.php
+END
+macro_hello.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/dav-svn/!svn/ver/934/trunk/www/macros/macro_hello.php
+END
+macros.php
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/dav-svn/!svn/ver/934/trunk/www/macros/macros.php
+END
+macro_googlespreadsheet.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/dav-svn/!svn/ver/959/trunk/www/macros/macro_googlespreadsheet.php
+END
+macro_ratingchart.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/dav-svn/!svn/ver/1031/trunk/www/macros/macro_ratingchart.php
+END
+macro_roundparam.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/dav-svn/!svn/ver/1071/trunk/www/macros/macro_roundparam.php
+END
+macro_googledocument.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/dav-svn/!svn/ver/985/trunk/www/macros/macro_googledocument.php
+END

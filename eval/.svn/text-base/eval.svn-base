@@ -1,0 +1,149 @@
+#! /usr/bin/env php
+<?php
+
+require_once(dirname($argv[0]) . "/config.php");
+
+require_once(IA_ROOT_DIR.'common/log.php');
+require_once(IA_ROOT_DIR.'common/common.php');
+
+require_once(IA_ROOT_DIR.'common/score.php');
+require_once(IA_ROOT_DIR.'common/task.php');
+require_once(IA_ROOT_DIR.'common/round.php');
+require_once(IA_ROOT_DIR.'common/security.php');
+require_once(IA_ROOT_DIR.'common/db/task.php');
+require_once(IA_ROOT_DIR.'common/db/job.php');
+require_once(IA_ROOT_DIR.'common/db/user.php');
+
+require_once(IA_ROOT_DIR.'eval/utilities.php');
+require_once(IA_ROOT_DIR.'eval/download.php');
+require_once(IA_ROOT_DIR.'eval/Exceptions.php');
+require_once(IA_ROOT_DIR.'eval/ClassicGrader.php');
+
+error_reporting(0xFFFF);
+
+// Send job result.
+function job_send_result($jobid, $jobresult) {
+    log_print("Sending result for job #{$jobid} ".
+            "score {$jobresult['score']} message {$jobresult['message']}");
+    log_print("");
+    job_update($jobid, 'done', $jobresult['message'], $jobresult['log'], $jobresult['score']);
+}
+
+// This function handles a certain job.
+function job_handle($job) {
+    // Evaluating, mark as processing.
+    // FIXME: do it in query.
+    job_update($job['id'], 'processing');
+
+    // Get task
+    $task = task_get($job['task_id']);
+    log_assert(!is_null($task), "Nu am gasit task-ul " . $job['task_id']);
+    log_assert_valid(task_validate($task));
+
+    // Get task parameters.
+    $task_parameters = task_get_parameters($job['task_id']);
+    log_assert(!is_null($task_parameters),
+            "Nu am putut paramtetrii task-ul " . $job['task_id']);
+    log_assert_valid(task_validate_parameters($task['type'],
+                                              $task_parameters));
+
+    // Make the grader and execute it.
+    log_print("Job #{$job['id']} task {$task['id']} round {$job['round_id']} type {$task['type']}");
+    if ($task['type'] == 'classic') {
+        $grader = new ClassicGrader($task, $task_parameters, $job);
+    } else {
+        log_error("Nu stiu sa evaluez task-uri de tip ".$task['type']);
+    }
+    try {
+        $job_result = $grader->grade();
+    } catch (EvalException $e) {
+        $job_result = array(
+            'score' => 0,
+            'message' => $e->getShortMessage(),
+            'log' => $e->getMessage(),
+        );
+    }
+
+    $submit_count = 0;
+    /**
+     * Check if the task was in a penalty type round
+     * Also increase the submit_count
+     */
+    if (!is_null($job['round_id']) && $job['round_id'] !== '') {
+        $round = round_get($job['round_id']);
+        if ($round['type'] == 'penalty-round') {
+            $round_parameters = round_get_parameters($job['round_id']);
+            /*
+            * Check the number of submits (so we can add to penalty)
+            */
+            if ($job_result['score'] > 0) {
+                $percent = max($round_parameters['minimum_score'], 100 -
+                        $job['submissions'] * $round_parameters['submit_cost'] -
+                        (int)((db_date_parse($job['submit_time']) -
+                            db_date_parse($round['start_time'])) /
+                        $round_parameters['decay_period']));
+                $job_result['score'] = (int)($percent * $job_result['score']
+                        / 100);
+            }
+        }
+    }
+
+    // Send job result and update score magic.
+    job_send_result($job['id'], $job_result);
+    score_update_for_job(
+            $job_result['score'],
+            $job['submit_time'],
+            $job['user_id'],
+            $job['task_id'],
+            $job['round_id']);
+}
+
+// Main loop. It works by polling the sql server
+// every IA_judge_POLL_INTERVAL
+function judge_main_loop() {
+    db_connect();
+
+    log_print("");
+    log_print("Judge started");
+    log_print("");
+
+    while (1) {
+        if ($round = round_get_round_to_wait()) {
+            round_event_wait($round);
+            continue;
+        }
+        if ($round = round_get_round_to_start()) {
+            round_event_start($round);
+            continue;
+        }
+        if ($round = round_get_round_to_stop()) {
+            round_event_stop($round);
+            continue;
+        }
+        if ($job = job_get_next_job()) {
+            job_handle($job);
+            continue;
+        }
+        milisleep(IA_JUDGE_POLL_INTERVAL);
+    }
+}
+
+// Parse options. FIXME: php's built-in getopt is dumb
+$options = getopt("dl:");
+
+if (array_key_exists('d', $options)) {
+    // Run in daemon mode. Fork to background, pid to eval.pid
+    if ($pid = pcntl_fork()) {
+        die();
+    }
+    file_put_contents(IA_ROOT_DIR . 'eval/eval.pid', getmypid() . "\n");
+}
+
+// FIXME: Is there a better way to redirect output? No freopen in php.
+if (array_key_exists('l', $options)) {
+    ini_set('error_log', $options['l']);
+}
+
+judge_main_loop();
+
+?>

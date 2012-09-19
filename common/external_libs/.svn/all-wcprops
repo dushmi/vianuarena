@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/dav-svn/!svn/ver/1175/trunk/common/external_libs
+END
+recaptchalib.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/dav-svn/!svn/ver/1175/trunk/common/external_libs/recaptchalib.php
+END
+zipfile.php
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/dav-svn/!svn/ver/1014/trunk/common/external_libs/zipfile.php
+END
+class.phpmailer.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/dav-svn/!svn/ver/1170/trunk/common/external_libs/class.phpmailer.php
+END
+class.smtp.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/dav-svn/!svn/ver/987/trunk/common/external_libs/class.smtp.php
+END
+simple_html_dom.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/dav-svn/!svn/ver/1063/trunk/common/external_libs/simple_html_dom.php
+END

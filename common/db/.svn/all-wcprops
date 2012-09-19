@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/dav-svn/!svn/ver/1185/trunk/common/db
+END
+user.php
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/dav-svn/!svn/ver/1155/trunk/common/db/user.php
+END
+db_smf_mysql.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/dav-svn/!svn/ver/852/trunk/common/db/db_smf_mysql.php
+END
+parameter.php
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/dav-svn/!svn/ver/852/trunk/common/db/parameter.php
+END
+blog.php
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/dav-svn/!svn/ver/1079/trunk/common/db/blog.php
+END
+smf.php
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/dav-svn/!svn/ver/1064/trunk/common/db/smf.php
+END
+db.php
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/dav-svn/!svn/ver/1174/trunk/common/db/db.php
+END
+round.php
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/dav-svn/!svn/ver/1179/trunk/common/db/round.php
+END
+attachment.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/dav-svn/!svn/ver/1164/trunk/common/db/attachment.php
+END
+tags.php
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/dav-svn/!svn/ver/1106/trunk/common/db/tags.php
+END
+textblock.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/dav-svn/!svn/ver/1100/trunk/common/db/textblock.php
+END
+task.php
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/dav-svn/!svn/ver/1185/trunk/common/db/task.php
+END
+tokens.php
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/dav-svn/!svn/ver/1174/trunk/common/db/tokens.php
+END
+task_rating.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/dav-svn/!svn/ver/1111/trunk/common/db/task_rating.php
+END
+round_task.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/dav-svn/!svn/ver/1132/trunk/common/db/round_task.php
+END
+job.php
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/dav-svn/!svn/ver/1179/trunk/common/db/job.php
+END
+db_mysql.php
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/dav-svn/!svn/ver/1060/trunk/common/db/db_mysql.php
+END
+score.php
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/dav-svn/!svn/ver/1185/trunk/common/db/score.php
+END

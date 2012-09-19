@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/dav-svn/!svn/ver/1162/trunk/tests
+END
+round.php
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/dav-svn/!svn/ver/1091/trunk/tests/round.php
+END
+attachment.php
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/dav-svn/!svn/ver/939/trunk/tests/attachment.php
+END
+user_page.php
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/dav-svn/!svn/ver/1051/trunk/tests/user_page.php
+END
+utilities.php
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/dav-svn/!svn/ver/1162/trunk/tests/utilities.php
+END
+account.php
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/dav-svn/!svn/ver/929/trunk/tests/account.php
+END
+array_schema.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/dav-svn/!svn/ver/929/trunk/tests/array_schema.php
+END
+textblock.php
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/dav-svn/!svn/ver/947/trunk/tests/textblock.php
+END
+browse.php
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/dav-svn/!svn/ver/852/trunk/tests/browse.php
+END
+task.php
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/dav-svn/!svn/ver/1091/trunk/tests/task.php
+END

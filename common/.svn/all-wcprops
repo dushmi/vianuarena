@@ -1,0 +1,149 @@
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/dav-svn/!svn/ver/1191/trunk/common
+END
+newsletter_template.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/dav-svn/!svn/ver/1190/trunk/common/newsletter_template.php
+END
+email.php
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/dav-svn/!svn/ver/945/trunk/common/email.php
+END
+round.php
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/dav-svn/!svn/ver/1179/trunk/common/round.php
+END
+common.php
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/dav-svn/!svn/ver/1191/trunk/common/common.php
+END
+attachment.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/dav-svn/!svn/ver/1170/trunk/common/attachment.php
+END
+array_path.php
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/dav-svn/!svn/ver/852/trunk/common/array_path.php
+END
+newsletter.php
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/dav-svn/!svn/ver/987/trunk/common/newsletter.php
+END
+array_schema.php
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/dav-svn/!svn/ver/852/trunk/common/array_schema.php
+END
+tags.php
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/dav-svn/!svn/ver/1106/trunk/common/tags.php
+END
+textblock.php
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/dav-svn/!svn/ver/1167/trunk/common/textblock.php
+END
+task.php
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/dav-svn/!svn/ver/1184/trunk/common/task.php
+END
+cache.php
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/dav-svn/!svn/ver/1178/trunk/common/cache.php
+END
+string.php
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/dav-svn/!svn/ver/940/trunk/common/string.php
+END
+task_rating.php
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/dav-svn/!svn/ver/1119/trunk/common/task_rating.php
+END
+security.php
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/dav-svn/!svn/ver/1185/trunk/common/security.php
+END
+diff.php
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/dav-svn/!svn/ver/1062/trunk/common/diff.php
+END
+job.php
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/dav-svn/!svn/ver/1061/trunk/common/job.php
+END
+score.php
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/dav-svn/!svn/ver/1110/trunk/common/score.php
+END
+lcs.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/dav-svn/!svn/ver/1021/trunk/common/lcs.cpp
+END
+user.php
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/dav-svn/!svn/ver/1149/trunk/common/user.php
+END
+avatar.php
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/dav-svn/!svn/ver/1159/trunk/common/avatar.php
+END
+parameter.php
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/dav-svn/!svn/ver/996/trunk/common/parameter.php
+END
+log.php
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/dav-svn/!svn/ver/997/trunk/common/log.php
+END
+rating.php
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/dav-svn/!svn/ver/884/trunk/common/rating.php
+END

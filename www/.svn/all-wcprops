@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 32
+/dav-svn/!svn/ver/1190/trunk/www
+END
+config.php
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/dav-svn/!svn/ver/1174/trunk/www/config.php
+END
+htaccess.sample
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/dav-svn/!svn/ver/1164/trunk/www/htaccess.sample
+END
+index.php
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/dav-svn/!svn/ver/1164/trunk/www/index.php
+END
+favicon.ico
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/dav-svn/!svn/ver/751/trunk/www/favicon.ico
+END
+JSON.php
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/dav-svn/!svn/ver/852/trunk/www/JSON.php
+END
+identity.php
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/dav-svn/!svn/ver/1164/trunk/www/identity.php
+END
+utilities.php
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/dav-svn/!svn/ver/1174/trunk/www/utilities.php
+END
+url.php
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/dav-svn/!svn/ver/1184/trunk/www/url.php
+END

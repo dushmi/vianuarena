@@ -1,0 +1,341 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/dav-svn/!svn/ver/1190/trunk/www/views
+END
+form_login.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/dav-svn/!svn/ver/1174/trunk/www/views/form_login.php
+END
+round_edit.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/dav-svn/!svn/ver/1164/trunk/www/views/round_edit.php
+END
+footer.php
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/dav-svn/!svn/ver/852/trunk/www/views/footer.php
+END
+listattach.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/dav-svn/!svn/ver/1164/trunk/www/views/listattach.php
+END
+google_search.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/dav-svn/!svn/ver/934/trunk/www/views/google_search.php
+END
+submit.php
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/dav-svn/!svn/ver/1047/trunk/www/views/submit.php
+END
+textblock_edit.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/dav-svn/!svn/ver/1164/trunk/www/views/textblock_edit.php
+END
+projector.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/dav-svn/!svn/ver/1164/trunk/www/views/projector.php
+END
+newsletter_preview_frame.php
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/dav-svn/!svn/ver/987/trunk/www/views/newsletter_preview_frame.php
+END
+textblock_header.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/dav-svn/!svn/ver/1170/trunk/www/views/textblock_header.php
+END
+login.php
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/dav-svn/!svn/ver/934/trunk/www/views/login.php
+END
+round_delete.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/dav-svn/!svn/ver/1167/trunk/www/views/round_delete.php
+END
+json.php
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/dav-svn/!svn/ver/1164/trunk/www/views/json.php
+END
+round_create.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/dav-svn/!svn/ver/1168/trunk/www/views/round_create.php
+END
+sitewide.php
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/dav-svn/!svn/ver/1170/trunk/www/views/sitewide.php
+END
+task_tags.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/dav-svn/!svn/ver/1190/trunk/www/views/task_tags.php
+END
+plot_rating.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/dav-svn/!svn/ver/1173/trunk/www/views/plot_rating.php
+END
+google_search_results.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/dav-svn/!svn/ver/934/trunk/www/views/google_search_results.php
+END
+job_view_source.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/dav-svn/!svn/ver/1049/trunk/www/views/job_view_source.php
+END
+round_register_view.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/dav-svn/!svn/ver/1164/trunk/www/views/round_register_view.php
+END
+submit_form.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/dav-svn/!svn/ver/1047/trunk/www/views/submit_form.php
+END
+monitor.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/dav-svn/!svn/ver/1164/trunk/www/views/monitor.php
+END
+header.php
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/dav-svn/!svn/ver/1190/trunk/www/views/header.php
+END
+round_register.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/dav-svn/!svn/ver/1164/trunk/www/views/round_register.php
+END
+account.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/dav-svn/!svn/ver/1159/trunk/www/views/account.php
+END
+job_detail.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/dav-svn/!svn/ver/1168/trunk/www/views/job_detail.php
+END
+round_unregister.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/dav-svn/!svn/ver/1164/trunk/www/views/round_unregister.php
+END
+task_tag_edit.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/dav-svn/!svn/ver/1111/trunk/www/views/task_tag_edit.php
+END
+round_task_order.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/dav-svn/!svn/ver/1164/trunk/www/views/round_task_order.php
+END
+round_edit_header.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/dav-svn/!svn/ver/1132/trunk/www/views/round_edit_header.php
+END
+tags_header.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/dav-svn/!svn/ver/1083/trunk/www/views/tags_header.php
+END
+rss.php
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/dav-svn/!svn/ver/1015/trunk/www/views/rss.php
+END
+task_edit.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/dav-svn/!svn/ver/1179/trunk/www/views/task_edit.php
+END
+changes.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/dav-svn/!svn/ver/1105/trunk/www/views/changes.php
+END
+resetpass.php
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/dav-svn/!svn/ver/934/trunk/www/views/resetpass.php
+END
+newsletter_preview_body.php
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/dav-svn/!svn/ver/987/trunk/www/views/newsletter_preview_body.php
+END
+blog_index.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/dav-svn/!svn/ver/1175/trunk/www/views/blog_index.php
+END
+task_rating_edit.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/dav-svn/!svn/ver/1164/trunk/www/views/task_rating_edit.php
+END
+utilities.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/dav-svn/!svn/ver/1188/trunk/www/views/utilities.php
+END
+plot_distribution.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/dav-svn/!svn/ver/1173/trunk/www/views/plot_distribution.php
+END
+blog_view.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/dav-svn/!svn/ver/1189/trunk/www/views/blog_view.php
+END
+sidebar_ad.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/dav-svn/!svn/ver/852/trunk/www/views/sidebar_ad.php
+END
+user.php
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/dav-svn/!svn/ver/1063/trunk/www/views/user.php
+END
+task_edit_header.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/dav-svn/!svn/ver/1139/trunk/www/views/task_edit_header.php
+END
+textblock_history.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/dav-svn/!svn/ver/1164/trunk/www/views/textblock_history.php
+END
+userwidget.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/dav-svn/!svn/ver/1162/trunk/www/views/userwidget.php
+END
+revision_warning.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/dav-svn/!svn/ver/1105/trunk/www/views/revision_warning.php
+END
+newsletter_index.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/dav-svn/!svn/ver/1139/trunk/www/views/newsletter_index.php
+END
+register.php
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/dav-svn/!svn/ver/1174/trunk/www/views/register.php
+END
+task_create.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/dav-svn/!svn/ver/1179/trunk/www/views/task_create.php
+END
+textblock_move.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/dav-svn/!svn/ver/934/trunk/www/views/textblock_move.php
+END
+textblock_diff.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/dav-svn/!svn/ver/968/trunk/www/views/textblock_diff.php
+END
+attachment.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/dav-svn/!svn/ver/1188/trunk/www/views/attachment.php
+END
+task_filter_results.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/dav-svn/!svn/ver/1182/trunk/www/views/task_filter_results.php
+END
+textblock_copy.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/dav-svn/!svn/ver/1167/trunk/www/views/textblock_copy.php
+END
+textblock_view.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/dav-svn/!svn/ver/1032/trunk/www/views/textblock_view.php
+END

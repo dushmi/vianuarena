@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/dav-svn/!svn/ver/1187/trunk/junk
+END
+migrate-remote-ip
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/dav-svn/!svn/ver/1187/trunk/junk/migrate-remote-ip
+END
+migrate-newsletters-to-html
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/dav-svn/!svn/ver/1187/trunk/junk/migrate-newsletters-to-html
+END
+migrate-authors-to-task-tags
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/dav-svn/!svn/ver/1187/trunk/junk/migrate-authors-to-task-tags
+END
+migrate-security-level.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/dav-svn/!svn/ver/1187/trunk/junk/migrate-security-level.php
+END
+migrate-virtual-contest
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/dav-svn/!svn/ver/1187/trunk/junk/migrate-virtual-contest
+END
+dep-rebuild
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/dav-svn/!svn/ver/852/trunk/junk/dep-rebuild
+END
+migrate-task-security
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/dav-svn/!svn/ver/1187/trunk/junk/migrate-task-security
+END
+change-collation.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/dav-svn/!svn/ver/852/trunk/junk/change-collation.php
+END
+smf-fix.php
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/dav-svn/!svn/ver/852/trunk/junk/smf-fix.php
+END
+_dcgrep
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/dav-svn/!svn/ver/852/trunk/junk/_dcgrep
+END
+_dcbuild
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/dav-svn/!svn/ver/852/trunk/junk/_dcbuild
+END
+migrate-ia-monthly
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/dav-svn/!svn/ver/1187/trunk/junk/migrate-ia-monthly
+END
+fix-users.php
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/dav-svn/!svn/ver/852/trunk/junk/fix-users.php
+END
+attach-dos2unix
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/dav-svn/!svn/ver/852/trunk/junk/attach-dos2unix
+END
+migrate-ia-score.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/dav-svn/!svn/ver/1187/trunk/junk/migrate-ia-score.php
+END
+migrate-add-tokens
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/dav-svn/!svn/ver/1187/trunk/junk/migrate-add-tokens
+END
+dep-check
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/dav-svn/!svn/ver/852/trunk/junk/dep-check
+END
+migrate-task-tags
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/dav-svn/!svn/ver/1187/trunk/junk/migrate-task-tags
+END
+userpage-fix.php
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/dav-svn/!svn/ver/997/trunk/junk/userpage-fix.php
+END

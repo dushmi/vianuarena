@@ -1,0 +1,85 @@
+<?php
+
+require_once(IA_ROOT_DIR.'common/db/job.php');
+require_once(IA_ROOT_DIR.'common/db/task.php');
+require_once(IA_ROOT_DIR.'common/db/round.php');
+
+// Safe function to validate and submit a job.
+// $args contains:
+//      task_id: Task to submit for.
+//      round_id: Round to submit for. Optional, if missing the job is sent
+//              to all parent rounds.
+//      compiler_id: c, cpp, fpc, or py.
+//      solution: A string with the file to submit.
+//
+// Returns an array of errors, or array() on success.
+function safe_job_submit($args, $user) {
+    $errors = array();
+
+    // Validate task id.
+    $task = null;
+    if (!array_key_exists('task_id', $args)) {
+        $errors['task_id'] = "Lipseste id-ul task-ului.";
+    } else if (!is_task_id($args['task_id'])) {
+        $errors['task_id'] = "Id de task invalid.";
+    } else if (is_null($task = task_get($args['task_id']))) {
+        $errors['task_id'] = "Task-ul {$args['task_id']} nu exista.";
+    }
+
+    // Validate round id.
+    $round = null;
+    if (!array_key_exists('round_id', $args)) {
+        $errors['round_id'] = "Nu ai specificat un concurs.";
+    } else if (!is_round_id($args['round_id'])) {
+        $errors['round_id'] = "Nu ai specificat un concurs corect.";
+    } else if (is_null($round = round_get($args['round_id']))) {
+        $errors['round_id'] = "Runda '{$args['round_id']}' nu exista.";
+    }
+    // Check if task is new and hasn't been added to any rounds
+    if (getattr($args, "round_id") == "" &&
+        !task_get_submit_rounds($task["id"], $user) &&
+        security_query($user, 'task-submit', $task)) {
+        unset($errors["round_id"]);
+    }
+
+    // Validate compiler id
+    $valid_compilers = array('c', 'cpp', 'fpc', 'py');
+    if (!array_key_exists('compiler_id', $args)) {
+        $errors['compiler_id'] = "Lipseste compilatorul.";
+    } else if (array_search($args['compiler_id'], $valid_compilers) === false) {
+        $errors['compiler_id'] = "Compilator invalid.";
+    }
+    // HACK: For the moment, only admin`s are allowed to submit Python jobs.
+    // TODO: Remove this once Python support is stable.
+    if ('py' == $args['compiler_id'] && !user_is_admin($user)) {
+        $errors['compiler_id'] = 'Deocamdata, numai administratorii pot '
+                .'trimite surse Python.';
+    }
+
+    // Validate solution
+    if (!array_key_exists('solution', $args)) {
+        $errors['solution'] = "Lipseste fisierul solutie.";
+    } else if (!is_string($args['solution'])) {
+        $errors['solution'] = "Solution trebuie sa fie string.";
+    } else if (IA_SUBMISSION_MAXSIZE <= strlen($args['solution'])) {
+        $errors['solution'] = "Solutia depaseste dimensiunea maxima admisa:".
+                ((int)IA_SUBMISSION_MAXSIZE / 1024).'KB.';
+    }
+
+    // Check task submit security
+    if ($task && !security_query($user, 'task-submit', $task)) {
+        $errors[] = "Nu ai voie sa trimiti la acest task.";
+    }
+    if ($round && !security_query($user, 'round-submit', $round)) {
+        $errors[] = "Nu poti sa trimiti la aceasta runda.";
+    }
+
+    // Only now create the job.
+    if (count($errors) === 0) {
+        job_create($args['task_id'], $args['round_id'], $user['id'],
+                $args['compiler_id'], $args['solution'],
+                getattr($args, 'remote_ip_info'));
+    }
+
+    return $errors;
+}

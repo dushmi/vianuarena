@@ -1,0 +1,395 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/dav-svn/!svn/ver/1176/trunk/smf/Sources
+END
+Subs-Members.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/dav-svn/!svn/ver/1154/trunk/smf/Sources/Subs-Members.php
+END
+Reminder.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/dav-svn/!svn/ver/1048/trunk/smf/Sources/Reminder.php
+END
+index.php
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/dav-svn/!svn/ver/852/trunk/smf/Sources/index.php
+END
+Notify.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/dav-svn/!svn/ver/852/trunk/smf/Sources/Notify.php
+END
+Subs.php
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/dav-svn/!svn/ver/1154/trunk/smf/Sources/Subs.php
+END
+RepairBoards.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/dav-svn/!svn/ver/852/trunk/smf/Sources/RepairBoards.php
+END
+ManageServer.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/dav-svn/!svn/ver/1017/trunk/smf/Sources/ManageServer.php
+END
+Recent.php
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/dav-svn/!svn/ver/1017/trunk/smf/Sources/Recent.php
+END
+Subs-Boards.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/dav-svn/!svn/ver/1121/trunk/smf/Sources/Subs-Boards.php
+END
+Post.php
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/dav-svn/!svn/ver/1176/trunk/smf/Sources/Post.php
+END
+ManageNews.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/dav-svn/!svn/ver/1154/trunk/smf/Sources/ManageNews.php
+END
+LockTopic.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/dav-svn/!svn/ver/852/trunk/smf/Sources/LockTopic.php
+END
+Help.php
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/dav-svn/!svn/ver/1048/trunk/smf/Sources/Help.php
+END
+Printpage.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/dav-svn/!svn/ver/852/trunk/smf/Sources/Printpage.php
+END
+RemoveTopic.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/dav-svn/!svn/ver/1017/trunk/smf/Sources/RemoveTopic.php
+END
+QueryString.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/dav-svn/!svn/ver/1154/trunk/smf/Sources/QueryString.php
+END
+ViewQuery.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/dav-svn/!svn/ver/852/trunk/smf/Sources/ViewQuery.php
+END
+Profile.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/dav-svn/!svn/ver/1121/trunk/smf/Sources/Profile.php
+END
+LogInOut.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/dav-svn/!svn/ver/1048/trunk/smf/Sources/LogInOut.php
+END
+ManageMembers.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/dav-svn/!svn/ver/1121/trunk/smf/Sources/ManageMembers.php
+END
+Memberlist.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/dav-svn/!svn/ver/852/trunk/smf/Sources/Memberlist.php
+END
+Display.php
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/dav-svn/!svn/ver/1121/trunk/smf/Sources/Display.php
+END
+MoveTopic.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/dav-svn/!svn/ver/852/trunk/smf/Sources/MoveTopic.php
+END
+Subs-Package.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/dav-svn/!svn/ver/1165/trunk/smf/Sources/Subs-Package.php
+END
+Poll.php
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/dav-svn/!svn/ver/1121/trunk/smf/Sources/Poll.php
+END
+Calendar.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/dav-svn/!svn/ver/1017/trunk/smf/Sources/Calendar.php
+END
+Subs-Graphics.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/dav-svn/!svn/ver/1121/trunk/smf/Sources/Subs-Graphics.php
+END
+Errors.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/dav-svn/!svn/ver/852/trunk/smf/Sources/Errors.php
+END
+MessageIndex.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/dav-svn/!svn/ver/1165/trunk/smf/Sources/MessageIndex.php
+END
+Load.php
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/dav-svn/!svn/ver/1155/trunk/smf/Sources/Load.php
+END
+BoardIndex.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/dav-svn/!svn/ver/1121/trunk/smf/Sources/BoardIndex.php
+END
+Modlog.php
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/dav-svn/!svn/ver/1121/trunk/smf/Sources/Modlog.php
+END
+Register.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/dav-svn/!svn/ver/1048/trunk/smf/Sources/Register.php
+END
+ManageErrors.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/dav-svn/!svn/ver/852/trunk/smf/Sources/ManageErrors.php
+END
+SendTopic.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/dav-svn/!svn/ver/852/trunk/smf/Sources/SendTopic.php
+END
+Reports.php
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/dav-svn/!svn/ver/852/trunk/smf/Sources/Reports.php
+END
+ModSettings.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/dav-svn/!svn/ver/852/trunk/smf/Sources/ModSettings.php
+END
+Subs-Sound.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/dav-svn/!svn/ver/1048/trunk/smf/Sources/Subs-Sound.php
+END
+Subs-Charset.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/dav-svn/!svn/ver/852/trunk/smf/Sources/Subs-Charset.php
+END
+Search.php
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/dav-svn/!svn/ver/1154/trunk/smf/Sources/Search.php
+END
+Subs-Auth.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/dav-svn/!svn/ver/1121/trunk/smf/Sources/Subs-Auth.php
+END
+News.php
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/dav-svn/!svn/ver/1154/trunk/smf/Sources/News.php
+END
+SplitTopics.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/dav-svn/!svn/ver/1121/trunk/smf/Sources/SplitTopics.php
+END
+Packages.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/dav-svn/!svn/ver/1165/trunk/smf/Sources/Packages.php
+END
+ManageSearch.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/dav-svn/!svn/ver/1154/trunk/smf/Sources/ManageSearch.php
+END
+ManageBoards.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/dav-svn/!svn/ver/853/trunk/smf/Sources/ManageBoards.php
+END
+ManagePermissions.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/dav-svn/!svn/ver/1121/trunk/smf/Sources/ManagePermissions.php
+END
+Admin.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/dav-svn/!svn/ver/1048/trunk/smf/Sources/Admin.php
+END
+PackageGet.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/dav-svn/!svn/ver/1154/trunk/smf/Sources/PackageGet.php
+END
+ManageBans.php
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/dav-svn/!svn/ver/1048/trunk/smf/Sources/ManageBans.php
+END
+Subs-Compat.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/dav-svn/!svn/ver/1048/trunk/smf/Sources/Subs-Compat.php
+END
+Stats.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/dav-svn/!svn/ver/1048/trunk/smf/Sources/Stats.php
+END
+ManageSmileys.php
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/dav-svn/!svn/ver/1154/trunk/smf/Sources/ManageSmileys.php
+END
+Subs-Post.php
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/dav-svn/!svn/ver/1048/trunk/smf/Sources/Subs-Post.php
+END
+Security.php
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/dav-svn/!svn/ver/1048/trunk/smf/Sources/Security.php
+END
+ManageMembergroups.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/dav-svn/!svn/ver/853/trunk/smf/Sources/ManageMembergroups.php
+END
+ManagePosts.php
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/dav-svn/!svn/ver/1121/trunk/smf/Sources/ManagePosts.php
+END
+ManageCalendar.php
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/dav-svn/!svn/ver/1121/trunk/smf/Sources/ManageCalendar.php
+END
+ManageRegistration.php
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/dav-svn/!svn/ver/1048/trunk/smf/Sources/ManageRegistration.php
+END
+ManageAttachments.php
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/dav-svn/!svn/ver/1121/trunk/smf/Sources/ManageAttachments.php
+END
+Themes.php
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/dav-svn/!svn/ver/1121/trunk/smf/Sources/Themes.php
+END
+PersonalMessage.php
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/dav-svn/!svn/ver/1067/trunk/smf/Sources/PersonalMessage.php
+END
+DumpDatabase.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/dav-svn/!svn/ver/1154/trunk/smf/Sources/DumpDatabase.php
+END
+Karma.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/dav-svn/!svn/ver/1017/trunk/smf/Sources/Karma.php
+END
+Who.php
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/dav-svn/!svn/ver/852/trunk/smf/Sources/Who.php
+END

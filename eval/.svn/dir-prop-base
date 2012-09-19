@@ -1,0 +1,13 @@
+K 10
+svn:ignore
+V 62
+grader_cache
+config.php
+eval.log
+eval.pid
+temp
+jail
+jails
+log
+
+END

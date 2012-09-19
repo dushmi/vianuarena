@@ -1,0 +1,29 @@
+#! /usr/bin/env php
+<?php
+
+// recomputes ratings *FROM SCRATCH*
+// (deletes existing ratings)
+//
+// FIXME: It now relies on the `update-ratings` tool. This isn't
+// very efficient since `update-ratings` always starts from scratch.
+
+require_once(dirname($argv[0]) . "/utilities.php");
+require_once(IA_ROOT_DIR."common/db/score.php");
+db_connect();
+
+// first, delete all ratings
+log_print("Deleting all current ratings");
+rating_clear();
+
+$rounds = rating_rounds();
+
+log_print("Recomputing ratings for ".count($rounds)." rounds...");
+$i = 1;
+$cnt = count($rounds);
+foreach ($rounds as $round_id => $round) {
+    echo "\n\n\nRound {$i}/{$cnt} - {$round_id}...\n";
+    system("./update-ratings {$round_id}");
+    $i++;
+}
+
+?>

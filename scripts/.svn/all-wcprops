@@ -1,0 +1,305 @@
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/dav-svn/!svn/ver/1187/trunk/scripts
+END
+task-difficulty
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/dav-svn/!svn/ver/1179/trunk/scripts/task-difficulty
+END
+make-avatar-folder
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/dav-svn/!svn/ver/1156/trunk/scripts/make-avatar-folder
+END
+textblock-creation-timestamp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/dav-svn/!svn/ver/852/trunk/scripts/textblock-creation-timestamp
+END
+hphp-set-env-var
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/dav-svn/!svn/ver/1180/trunk/scripts/hphp-set-env-var
+END
+init-script
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/dav-svn/!svn/ver/852/trunk/scripts/init-script
+END
+backup
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/dav-svn/!svn/ver/1184/trunk/scripts/backup
+END
+forum-fix-win
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/dav-svn/!svn/ver/852/trunk/scripts/forum-fix-win
+END
+init-blog-comments
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/dav-svn/!svn/ver/997/trunk/scripts/init-blog-comments
+END
+recompute-task-ratings
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/dav-svn/!svn/ver/1119/trunk/scripts/recompute-task-ratings
+END
+recursive-move
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/dav-svn/!svn/ver/1071/trunk/scripts/recursive-move
+END
+hphp-install.sh
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/dav-svn/!svn/ver/1183/trunk/scripts/hphp-install.sh
+END
+forum-fix
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/dav-svn/!svn/ver/852/trunk/scripts/forum-fix
+END
+mirror-backup
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/dav-svn/!svn/ver/1028/trunk/scripts/mirror-backup
+END
+recursive-copy
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/dav-svn/!svn/ver/1057/trunk/scripts/recursive-copy
+END
+round-statistics
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/dav-svn/!svn/ver/1110/trunk/scripts/round-statistics
+END
+add-db-task-ratings
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/dav-svn/!svn/ver/1111/trunk/scripts/add-db-task-ratings
+END
+link-task-forum
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/dav-svn/!svn/ver/997/trunk/scripts/link-task-forum
+END
+add-round-task-order
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/dav-svn/!svn/ver/1132/trunk/scripts/add-round-task-order
+END
+update-ratings
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/dav-svn/!svn/ver/1110/trunk/scripts/update-ratings
+END
+db-backup
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/dav-svn/!svn/ver/1012/trunk/scripts/db-backup
+END
+pybin.sh
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/dav-svn/!svn/ver/993/trunk/scripts/pybin.sh
+END
+textblock-add-topic-id
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/dav-svn/!svn/ver/997/trunk/scripts/textblock-add-topic-id
+END
+extract-sources
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/dav-svn/!svn/ver/907/trunk/scripts/extract-sources
+END
+setup-win
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/dav-svn/!svn/ver/907/trunk/scripts/setup-win
+END
+update-mimetypes
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/dav-svn/!svn/ver/966/trunk/scripts/update-mimetypes
+END
+migrate_task_parameters
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/dav-svn/!svn/ver/996/trunk/scripts/migrate_task_parameters
+END
+setup
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/dav-svn/!svn/ver/1166/trunk/scripts/setup
+END
+change-special-chars
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/dav-svn/!svn/ver/1074/trunk/scripts/change-special-chars
+END
+textblock-add-missing-security
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/dav-svn/!svn/ver/1066/trunk/scripts/textblock-add-missing-security
+END
+db-client
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/dav-svn/!svn/ver/852/trunk/scripts/db-client
+END
+utilities.php
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/dav-svn/!svn/ver/1113/trunk/scripts/utilities.php
+END
+attach-endline-fix
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/dav-svn/!svn/ver/1170/trunk/scripts/attach-endline-fix
+END
+change-timestamp-oldrevisions
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/dav-svn/!svn/ver/1100/trunk/scripts/change-timestamp-oldrevisions
+END
+recompute-ratings
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/dav-svn/!svn/ver/852/trunk/scripts/recompute-ratings
+END
+news-to-blog
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/dav-svn/!svn/ver/974/trunk/scripts/news-to-blog
+END
+seek-value-in-db.php
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/dav-svn/!svn/ver/1109/trunk/scripts/seek-value-in-db.php
+END
+opensource
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/dav-svn/!svn/ver/907/trunk/scripts/opensource
+END
+purge-cache
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/dav-svn/!svn/ver/852/trunk/scripts/purge-cache
+END
+send-newsletter
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/dav-svn/!svn/ver/1170/trunk/scripts/send-newsletter
+END
+db-strip
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/dav-svn/!svn/ver/1179/trunk/scripts/db-strip
+END
+live-eval
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/dav-svn/!svn/ver/961/trunk/scripts/live-eval
+END
+ia_job_add_status_index
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/dav-svn/!svn/ver/961/trunk/scripts/ia_job_add_status_index
+END
+utf8
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/dav-svn/!svn/ver/930/trunk/scripts/utf8
+END
+check-attachments
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/dav-svn/!svn/ver/1170/trunk/scripts/check-attachments
+END
+db-backup-delete
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/dav-svn/!svn/ver/1121/trunk/scripts/db-backup-delete
+END
+benchmark
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/dav-svn/!svn/ver/1094/trunk/scripts/benchmark
+END
+attach-fix-size
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/dav-svn/!svn/ver/907/trunk/scripts/attach-fix-size
+END
+fs-benchmark
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/dav-svn/!svn/ver/945/trunk/scripts/fs-benchmark
+END
+attach-fix-case
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/dav-svn/!svn/ver/884/trunk/scripts/attach-fix-case
+END
+ia_job_reindex
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/dav-svn/!svn/ver/965/trunk/scripts/ia_job_reindex
+END

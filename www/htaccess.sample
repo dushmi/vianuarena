@@ -1,0 +1,38 @@
+RewriteEngine On
+
+# Same as IA_URL_PREFIX
+# Slashes at both ends
+RewriteBase --write-me-IA_URL_PREFIX--
+
+RewriteCond %{REQUEST_URI}  !^.*/index\.php$
+RewriteCond %{REQUEST_URI}  !^.*/static/.*$
+RewriteCond %{REQUEST_URI}  !^.*/forum/.*$
+RewriteCond %{REQUEST_URI}  !^.*/robots\.txt$
+RewriteCond %{REQUEST_URI}  !^.*/favicon\.ico$
+RewriteCond %{REQUEST_URI}  !^.*/stiri/.*$
+RewriteCond %{REQUEST_URI}  !^.*/news_feed$
+RewriteCond %{REQUEST_URI}  !^.*/avatar/.*$
+RewriteRule ^(.*) index.php?page=$1 [QSA]
+
+RewriteRule ^avatar/(tiny|small|normal|forum|big|full)/(.+)$ static/images/avatar/$1/a$2
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^static/images/avatar/(tiny|small|normal|forum|big|full)/(.+)$ static/images/avatar/$1/noimage
+
+RewriteRule ^stiri/(.*)$ blog/$1 [R=301,QSA]
+RewriteRule ^news_feed$ blog?action=rss [R=301,QSA]
+
+php_value magic_quotes_gpc 0
+php_value register_globals 0
+php_value session.use_only_cookies 1
+
+# Error reporting. Everything is logged, but only in the web server log.
+php_value error_reporting 65535
+
+# FIXME: change for production environment.
+php_value display_errors true
+php_value log_errors true
+php_value html_errors false
+php_value memory_limit "64M"
+php_value post_max_size "65M"
+php_value upload_max_filesize "64M"
