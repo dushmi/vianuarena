@@ -130,7 +130,6 @@ ia_template_topnav($topnav_select, $is_admin);
         <?php if (!isset($no_sidebar_login)) include(IA_ROOT_DIR.'www/views/form_login.php') ?>
         <p>
         <?= format_link(url_register(), "Ma inregistrez!" ) ?><br/>
-        <?= format_link(url_resetpass(), "Mi-am uitat parola..." ) ?>
         </p>
     </div>
     <?php } ?>

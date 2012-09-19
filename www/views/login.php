@@ -4,7 +4,7 @@
 
 <p>Daca nu esti inregistrat deja, te poti
 <?= format_link(url_register(), "inregistra aici") ?>;
-daca ti-ai uitat parola, o poti <a href="<?= html_escape(url_resetpass()) ?>">reseta aici</a>.</p>
+daca ti-ai uitat parola, poti trimite un e-mail unui administrator pentru a o schimba.<.</p>
 
 <?php include(IA_ROOT_DIR.'www/views/form_login.php'); ?>
 

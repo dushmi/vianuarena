@@ -2,7 +2,7 @@
 
 <h1><?= html_escape($view['title']) ?></h1>
 
-<p>Daca esti deja inregistrat te poti <a href="<?= html_escape(url_login()) ?>">autentifica aici</a>; daca ti-ai uitat parola, o poti <a href="<?= html_escape(url_resetpass()) ?>">reseta aici</a>.</p>
+<p>Daca esti deja inregistrat te poti <a href="<?= html_escape(url_login()) ?>">autentifica aici</a>; daca ti-ai uitat parola, poti trimite un e-mail unui administrator pentru a o schimba.</p>
 
 <div id="sidebar2">
 <div class="section">
@@ -26,7 +26,7 @@
 
 <form enctype="multipart" action="<?= html_escape($action) ?>" method="post" class="profile clear">
 <fieldset>
-    <legend><img src="<?= html_escape(url_static('images/icons/key.gif')) ?>" alt="!" /> Utilizator infoarena</legend>
+    <legend><img src="<?= html_escape(url_static('images/icons/key.gif')) ?>" alt="!" /> Utilizator VianuArena</legend>
     <ul class="form">
         <li>
             <label for='form_username'>Nume cont utilizator</label>
@@ -69,7 +69,7 @@
             <label for="form_email">Adresa e-mail</label>
             <?= ferr_span('email') ?>
             <input type="text" name="email" value="<?= fval('email') ?>" id="form_email" />
-            <span class="fieldHelp">Aici vei primi (in caz ca doresti) mesaje de la alti utilizatori, noutati infoarena</span>
+            <span class="fieldHelp">Adresa de e-mail va fi folosita pentru recuperarea parolei</span>
         </li>
     </ul>
 </fieldset>
@@ -100,15 +100,9 @@
 
 <ul class="form clear">
     <li>
-        <input type="checkbox" <?php if (fval('newsletter'))
-            echo 'checked="checked"'; ?> name="newsletter" id="form_newsletter"/>
-        <label for="form_newsletter" class="checkbox">Ma abonez la newsletter. Sunt de acord sa primesc pe e-mail noutati despre infoarena. Ma pot dezabona oricand.</label>
-    </li>
-    <li>
         <?= ferr_span('tnc') ?>
-        <input type="checkbox" <?php if (fval('tnc'))
-            echo 'checked="checked"'; ?> name="tnc" id="form_tnc"/>
-        <label for="form_tnc" class="checkbox">Sunt de acord cu <a href="<?= html_escape(url_textblock('termeni-si-conditii')) ?>">termenii si conditiile de utilizare</a> ale site-ului infoarena</label>
+        <input type="checkbox" style="display:none;" <?php if (fval('tnc'))
+        echo 'checked="checked"'; ?> name="tnc" id="form_tnc" CHECKED/>
     </li>
     <li>
         <input type="submit" value="Inregistreaza-ma" id="form_submit" class="button important" />

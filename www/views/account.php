@@ -80,7 +80,7 @@ if (array_key_exists('security_level', $form_values)) {
             <label for="form_email">Adresa e-mail</label>
             <?= ferr_span('email') ?>
             <input type="text" name="email" value="<?= fval('email') ?>" id="form_email" />
-            <span class="fieldHelp">Aici vei primi (in caz ca doresti) mesaje de la alti utilizatori, noutati infoarena</span>
+            <span class="fieldHelp">Adresa de e-mail va fi folosita pentru recuperarea parolei</span>
         </li>
     </ul>
 </fieldset>
@@ -115,11 +115,6 @@ if (array_key_exists('security_level', $form_values)) {
 </fieldset>
 
 <ul class="form clear">
-    <li>
-        <input type="checkbox" <?php if (fval('newsletter'))
-            echo 'checked="checked"'; ?> name="newsletter" id="form_newsletter"/>
-        <label for="form_newsletter" class="checkbox">Ma abonez la newsletter. Sunt de acord sa primesc pe e-mail noutati despre infoarena. Ma pot dezabona oricand.</label>
-    </li>
     <li>
         <input type="submit" value="Salveaza" id="form_submit" class="button important" />
     </li>
