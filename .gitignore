@@ -1,8 +1,8 @@
 backup/
 
 config.php
-eval/config.php
 
+eval/config.php
 eval/temp/*
 
 hphp/config.hdf
