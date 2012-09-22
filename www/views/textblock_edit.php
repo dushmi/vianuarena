@@ -65,25 +65,11 @@ if (($round_id = textblock_security_is_round($page['security'])) &&
         <label for="form_text">Continut</label>
         <textarea name="text" id="form_text" rows="10" cols="50"><?= fval('text') ?></textarea>
         <?= ferr_span('text') ?>
-        <?= format_link(url_textblock('documentatie/wiki'), "Cum formatez text?") ?>
     </li>
-
-    <?php if (array_key_exists('forum_topic', $form_values)) { ?>
-    <li id="field_forum_topic">
-        <label for="form_forum_topic">Forum Topic</label>
-        <input type="text" name="forum_topic" value="<?= fval('forum_topic') ?>" id="form_forum_topic" />
-        <?= ferr_span('forum_topic') ?>
-    </li>
-    <?php } ?>
-
-    <?php if (identity_can('textblock-tag', $view['page'])) { ?>
-       <?= tag_format_input_box(array("label" => "Tag-uri", "name" => "tags"), fval('tags')) ?>
-    <?php } ?>
 
     <?php if (array_key_exists('security', $form_values)) { ?>
     <li id="field_security">
-        <label for="form_security">Nivel de securitate al paginii
-        <a href="<?= html_escape(url_textblock('documentatie/securitate')) ?>">(?)</a></label>
+        <label for="form_security">Nivel de securitate al paginii</label>
 
         <select id="security_select" name="security" onchange="toggleSpecial()">
         <?php

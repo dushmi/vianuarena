@@ -1,11 +1,12 @@
-#include<stdio.h>
+#include<iostream>
+#include<fstream>
 int a,b;
-
+using namespace std;
 int main()
 {
-	freopen("adunare.in","r",stdin);
-	freopen("adunare.out","w",stdout);
-	scanf("%d%d",&a,&b);
-	printf("%d",a+b);
+	ifstream cit("adunare.in");
+	ofstream afis("adunare.out");
+	cit>>a>>b;
+	afis<<a+b;
 	return 0;
 }
