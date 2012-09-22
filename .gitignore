@@ -3,6 +3,8 @@ backup/
 config.php
 eval/config.php
 
+eval/temp/
+
 hphp/config.hdf
 nginx.conf
 apache.conf
