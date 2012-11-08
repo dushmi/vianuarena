@@ -4,6 +4,7 @@ config.php
 
 eval/config.php
 eval/temp/*
+eval/jail/
 
 hphp/config.hdf
 nginx.conf

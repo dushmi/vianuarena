@@ -1,4 +1,8 @@
 <?php
+include_once(IA_ROOT_DIR.'www/views/analyticstrack.php');
+?>
+
+<?php
 require_once(IA_ROOT_DIR.'www/views/sitewide.php');
 ?>
 </div>
