@@ -21,6 +21,7 @@ scripts/newsletter-logs/
 www/static/images/avatar/
 www/static/images/latex/
 www/static/images/tmp/
+www/views/analyticstrack.php
 
 arcanist/
 libphutil/
