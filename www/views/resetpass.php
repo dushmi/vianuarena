@@ -4,8 +4,7 @@
 
 <h1><?= html_escape($title) ?></h1>
 
-<p>Introdu numele de utilizator sau adresa de e-mail cu care te-ai inregistrat pe site.</p>
-<p>Iti vom trimite pe e-mail instructiuni pentru a-ti reseta parola.</p>
+<p>Introdu numele de utilizator al celui caruia vrei sa ii schimbi parola si noua parola.</p>
 
 <form action="<?= html_escape(url_resetpass()) ?>" method="post" class="login clear">
 <fieldset>
@@ -15,23 +14,19 @@
             <label for="form_username">Cont de utilizator</label>
             <?= ferr_span('username') ?>
             <input type="text" name="username" id="form_username" value="<?= fval('username') ?>" />
-            <span class="fieldHelp">daca l-ai uitat, introdu doar adresa de e-mail</span>
+        </li>
+        
+        <li>
+            <label for="form_new_password">Parola noua</label>
+            <?= ferr_span('new_password') ?>
+            <input type="text" name="new_password" id="form_new_password" value="<?= fval('new_password') ?>" />
         </li>
 
-        <li>
-            sau
-        </li>
-
-        <li>
-            <label for="form_email">Adresa de e-mail</label>
-            <?= ferr_span('email') ?>
-            <input type="text" name="email" id="form_email" value="<?= fval('email') ?>" />
-        </li>
     </ul>
 </fieldset>
 <ul class="form clear">
     <li>
-        <input type="submit" value="Trimite-mi instructiuni" id="form_submit" class="button important" />
+        <input type="submit" value="Schimbare parola" id="form_submit" class="button important" />
     </li>
 </ul>
 </form>

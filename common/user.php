@@ -112,7 +112,7 @@ function user_is_admin($user) {
         return false;
     }
     log_assert_valid(user_validate($user));
-    return $user['security_level'] === 'admin';
+    return ($user['security_level'] === 'admin' || $user['security_level'] === 'intern');
 }
 
 ?>

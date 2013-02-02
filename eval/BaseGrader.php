@@ -144,7 +144,7 @@ abstract class BaseGrader {
             $test_result['grader_time'] = null;
             $test_result['grader_mem'] = null;
             if (is_readable($outfile)) {
-                $diff_output = shell_exec("diff -qBbEa $outfile $okfile");
+                $diff_output = shell_exec("diff -qbEa $outfile $okfile");
                 if ($diff_output == '') {
                     log_print("Test $testno: Diff eval: Files identical");
                     $test_result['message'] = 'OK';
