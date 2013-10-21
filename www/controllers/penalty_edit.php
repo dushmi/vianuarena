@@ -36,6 +36,7 @@ function controller_penalty_solve($user_id, $round_id) {
     $view['total_score'] = $total_score['score'];
     $view['tasks'] = $scores;
     $view['user'] = user_get_by_id($user_id);
+    $view['user'] = round_get($round_id);
 
     execute_view_die('views/penalty_edit.php', $view);
 }
