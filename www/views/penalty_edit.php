@@ -7,7 +7,7 @@
 <?php 
 echo "Modifica punctajele per problema pentru utilizatorul <b>".$view['user']['username']."</b> la concursul <b>".$view['round']['title']."</b>.";
 
-echo '<form action="/penalty_edit" method="post" class="login clear">';
+echo '<form action="<?= html_escape(url_penalty_edit('.$view['user']['id'].', '.$view['round']['title'].')) ?>" method="post" class="login clear">';
 echo '<fieldset>';
 echo '<legend>Scor total: '.$view['total_score'].'</legend>';
 echo '<ul class="form">';
