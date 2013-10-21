@@ -507,11 +507,11 @@ function scores_get_by_user_id_and_round_id($user_id, $round_id) {
 
 function total_score_get_by_user_id_and_round_id($user_id, $round_id) {
     $query = sprintf("SELECT * FROM 'ia_score_user_round'
-                      WHERE 'user_id' = %d AND 'round_id' LIKE '%s'",
-                      $user_id, $round_id);
+                      WHERE 'user_id' = 1 AND 'round_id' LIKE 'test-contest'");
     echo($query);
     echo("WTF");
-    $total_score = db_fetch($query);
+    $total_score = array();
+    $total_score = db_query($query);
     echo("WTF");
     return $total_score;
 }
