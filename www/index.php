@@ -54,7 +54,7 @@ $directmaps = array_flip(array('register', 'changes',
                                'monitor', 'projector', 'submit', 'userinfo',
                                'plot', 'search',
                                'unsubscribe', 'resetpass', 'reeval', 'userwidget', 
-                               'penalty'
+                               'penalty', 'penalty_edit'
 ));
 
 //
