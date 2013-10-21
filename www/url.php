@@ -426,3 +426,7 @@ function url_admin() {
 function url_penalty() {
     return url_complex("penalty");
 }
+
+function url_penalty_edit($user, $round_id) {
+    return url_complex("penalty", array('user' => $user, 'round_id' => $round_id));
+}

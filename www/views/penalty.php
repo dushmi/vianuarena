@@ -17,9 +17,9 @@
         </li>
         
         <li>
-            <label for="form_contest_id">ID concurs</label>
-            <?= ferr_span('contest_id') ?>
-            <input type="text" name="contest_id" id="form_contest_id" value="<?= fval('contest_id') ?>" />
+            <label for="form_round_id">I concurs</label>
+            <?= ferr_span('round_id') ?>
+            <input type="text" name="round_id" id="form_round_id" value="<?= fval('round_id') ?>" />
         </li>
 
     </ul>

@@ -40,24 +40,19 @@ function controller_penalty() {
             }
         }
 
-        $data['contest_id'] = getattr($_POST, 'contest_id');
+        $data['round_id'] = getattr($_POST, 'round_id');
         // check contest_id
-        if ($data['contest_id']) {
-            $contest_id = round_get($data['contest_id']);
-            if (!$contest_id) {
-                $errors['contest_id'] = 'Nu exista runda cu acest '.'id';
+        if ($data['round_id']) {
+            $round_id = round_get($data['round_id']);
+            if (!$round_id) {
+                $errors['round_id'] = 'Nu exista runda cu acest '.'id';
             }
         }
+        
+        if ($user && $round_id) {
+            redirect(url_penalty_edit($user, $round_id));
+        }
 
-        #if (isset($user) && $user && !empty($new_pass)) {
-            // user was found
-        #    $user['password'] = user_hash_password($new_pass, $user['username']);
-        #    user_update($user);
-        #    redirect(url_home());
-        #}
-        #else {
-        #    flash_error('Trebuie sa completezi ambele campuri!');
-        #}
     }
     else {
         // initial display of form
