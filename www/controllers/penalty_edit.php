@@ -26,12 +26,13 @@ function controller_penalty_edit() {
 }
 
 function controller_penalty_solve($user_id, $round_id) {
+    #$scores = array();
     #$scores = scores_get_by_user_id_and_round_id($user_id, $round_id);
-    #$total_score = total_score_get_by_user_id_and_round_id($user_id, $round_id);
+    $total_score = total_score_get_by_user_id_and_round_id($user_id, $round_id);
 
     $view = array();
     $view['title'] = 'Penalty Edit';
-    #$view['total_score'] = $total_score;
+    $view['total_score'] = $total_score;
     #$view['tasks'] = array();
 
     #foreach ($scores as $task_id)
