@@ -6,7 +6,7 @@
 
 <p>Modifica punctajele per problema.</p>
 
-
+<?php echo $view['total_score']; ?>
 
 <?php
     include('footer.php');
