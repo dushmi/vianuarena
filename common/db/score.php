@@ -510,6 +510,6 @@ function total_score_get_by_user_id_and_round_id($user_id, $round_id) {
                       WHERE 'user_id' = %s AND 'round_id' LIKE %s",
                       db_escape($user_id), db_quote($round_id));
     $total_score = db_fetch($query);
-    echo($total_score['score']);
+    echo("WTF".$total_score);
     return $total_score;
 }
