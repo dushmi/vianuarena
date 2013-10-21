@@ -424,5 +424,5 @@ function url_admin() {
 }
 
 function url_penalty() {
-    return url_comples('penalty');
+    return url_complex('penalty');
 }
