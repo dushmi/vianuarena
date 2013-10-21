@@ -8,7 +8,7 @@ require_once(IA_ROOT_DIR."common/email.php");
 // displays form to identify user. On submit it sends e-mail with confirmation
 // link.
 
-function controller_penalty_edit($user_id, $round_id) {
+function controller_penalty_edit() {
     global $identity_user;
 
     //security check
@@ -43,7 +43,7 @@ function controller_penalty_edit($user_id, $round_id) {
     $view['form_errors'] = $errors;
     $view['form_values'] = $data;
     $view['no_sidebar_login'] = true;
-    execute_view_die('views/penalty_edit.php', $view);
+    #execute_view_die('views/penalty_edit.php', $view);
 }
 
 ?>
