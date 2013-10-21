@@ -28,7 +28,7 @@ function controller_penalty_edit() {
 }
 
 function controller_penalty_solve($user_id, $round_id) {
-    #$scores = scores_get_by_user_id_and_round_id($user_id, $round_id);
+    $scores = scores_get_by_user_id_and_round_id($user_id, $round_id);
     $total_score = total_score_get_by_user_id_and_round_id($user_id, $round_id);
 
     $view = array();
