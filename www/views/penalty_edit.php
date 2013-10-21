@@ -10,10 +10,7 @@
 <fieldset>
     <legend>Probleme</legend>
     
-    <?php
-    foreach ($view as $task_id)
-        echo $task_id." ".$view[$task_id];
-    ?>
+
 </fieldset>
 
 </form>
