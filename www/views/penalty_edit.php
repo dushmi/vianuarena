@@ -19,8 +19,8 @@ foreach ($view['tasks'] as $task) {
 	echo '<input type="text" name="username" id="form_username" value="<?= fval("'.$task['task_id'].'") ?>" />';
 	echo '</li>';
 }
-        echo $task['task_id']."  ".$task['score']."    ";
-echo '</ul>'
+
+echo '</ul>';
 echo '</fieldset>';
 echo '</form>';
 ?>
