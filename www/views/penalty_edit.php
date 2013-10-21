@@ -16,7 +16,7 @@ foreach ($view['tasks'] as $task) {
 	echo '<li>';
 	echo '<label for="form_'.$task['task_id'].'">'.$task['task_id'].'</label>';
 	echo '<?= ferr_span("'.$task['task_id'].'") ?>';
-	echo '<input type="text" name="username" id="form_username" value="'.$task['score'].'" />';
+	echo '<input type="text" name="'.$task['task_id'].'" id="form_'.$task['task_id'].'" value="'.$task['score'].'" />';
 	echo '</li>';
 }
 
