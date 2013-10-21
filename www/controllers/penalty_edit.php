@@ -36,9 +36,13 @@ function controller_penalty_solve($user_id, $round_id) {
     if ($submit) {
         foreach ($scores as $task) {
             $task['score'] = getattr($_POST, $task['task_id']);
+            echo getattr($_POST, $task['task_id']);
             score_update($task['user_id'], $task['task_id'], $task['round_id'], $task['score']);
         }
+        
         redirect(url_home());
+    } else {
+        //initial display of the form
     }
 
     //page data
