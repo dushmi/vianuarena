@@ -507,8 +507,8 @@ function scores_get_by_user_id_and_round_id($user_id, $round_id) {
 
 function total_score_get_by_user_id_and_round_id($user_id, $round_id) {
     $query = sprintf("SELECT *
-                      FROM ia_user
-                      WHERE id = %s",
+                      FROM ia_score_user_round
+                      WHERE user_id = %s",
                      db_quote($user_id));
     echo($query);
     echo("WTF");
