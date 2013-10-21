@@ -6,10 +6,10 @@
 
 <p>Modifica punctajele per problema.</p>
 
-<?php echo $view['total_score']; ?>
+<?php echo $view['total_score']."     "; ?>
 <?php
     foreach ($view['tasks'] as $task)
-        echo $task['task_id']." ".$task['score']."      ";
+        echo $task."      ";
     ?>
 
 <?php
