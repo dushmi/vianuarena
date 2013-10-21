@@ -17,6 +17,7 @@ function controller_penalty_edit() {
     #   redirect(url_home());
 
     $view = array();
+    $view['title'] = 'Penalty Edit';
 
     execute_view_die('views/penalty_edit.php', $view);
 
