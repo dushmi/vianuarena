@@ -26,14 +26,15 @@ function controller_penalty_edit() {
 }
 
 function controller_penalty_solve($user_id, $round_id) {
-    #$scores = scores_get_by_user_id_and_round_id($user_id, $round_id);
-    #$total_score = total_score_get_by_user_id_and_round_id($user_id, $round_id);
+    $scores = scores_get_by_user_id_and_round_id($user_id, $round_id);
+    $total_score = total_score_get_by_user_id_and_round_id($user_id, $round_id);
 
     $view = array();
     $view['title'] = 'Penalty Edit';
+    $view['total_score'] = $total_score
 
-    #foreach ($scores as $task_id)
-        #$view['tasks'][$task_id] = $scores['score']; 
+    foreach ($scores as $task_id)
+        $view['tasks'][$task_id] = $scores['score']; 
 
     execute_view_die('views/penalty_edit.php', $view);
 }
