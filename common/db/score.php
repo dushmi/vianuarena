@@ -501,7 +501,6 @@ function scores_get_by_user_id_and_round_id($user_id, $round_id) {
     $query = sprintf("SELECT * FROM ia_score_user_round_task
                       WHERE 'user_id' = %s AND 'round_id' = %s",
                       $user_id, $round_id);
-    echo("<script>console.log('PHP: SCORES MERGE');</script>");
     return db_query($query);
 
 }
