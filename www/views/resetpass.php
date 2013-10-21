@@ -4,7 +4,7 @@
 
 <h1><?= html_escape($title) ?></h1>
 
-<p>Introdu numele de utilizator al celui caruia vrei sa ii schimbi parola si noua parola.</p>
+<p>Introduceti numele de utilizator al celui caruia vreti sa ii schimbati parola si noua parola.</p>
 
 <form action="<?= html_escape(url_resetpass()) ?>" method="post" class="login clear">
 <fieldset>
