@@ -8,7 +8,7 @@ require_once(IA_ROOT_DIR."common/email.php");
 // displays form to identify user. On submit it sends e-mail with confirmation
 // link.
 
-function controller_penalty() {
+function controller_penalty_edit() {
     global $identity_user;
 
     // `data` dictionary is a dictionary with data to be displayed by form view
@@ -29,31 +29,6 @@ function controller_penalty() {
 
     if ($submit) {
         // 1. validate
-
-        $data['username'] = getattr($_POST, 'username');
-        // check username
-        if ($data['username']) {
-            $user = user_get_by_username($data['username']);
-            if (!$user) {
-                $errors['username'] = 'Nu exista vreun utilizator cu acest '
-                                      .'nume de cont';
-            }
-        }
-
-        $data['round_id'] = getattr($_POST, 'round_id');
-        // check contest_id
-        if ($data['round_id']) {
-            $round = round_get($data['round_id']);
-            if (!$round) {
-                $errors['round_id'] = 'Nu exista runda cu acest '.'id';
-            }
-        }
-        
-        if (isset($user) && isset($round)) {
-            redirect(url_penalty_edit($user['id'], $round['id']));
-        } else {
-            flash_error('Trebuie sa completezi ambele campuri!');
-        }
 
     }
     else {

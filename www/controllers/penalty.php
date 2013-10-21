@@ -49,7 +49,7 @@ function controller_penalty() {
             }
         }
         
-        if (isset($user) && isset($round)) {
+        if (isset($user) && $user && isset($round) && $round) {
             redirect(url_penalty_edit($user['id'], $round['id']));
         } else {
             flash_error('Trebuie sa completezi ambele campuri!');
