@@ -6,11 +6,18 @@
 
 <p>Modifica punctajele per problema.</p>
 
-<?php echo $view['total_score']."     "; ?>
-<?php
-    foreach ($view['tasks'] as $task)
+<?php 
+echo "<p>Scor total: ".$view['total_score']."</p>"; 
+
+foreach ($view['tasks'] as $task)
         echo $task['task_id']."  ".$task['score']."    ";
-    ?>
+ ?>
+
+<ul class="form clear">
+    <li>
+        <input type="submit" value="Submit" id="form_submit" class="button important" />
+    </li>
+</ul>
 
 <?php
     include('footer.php');
