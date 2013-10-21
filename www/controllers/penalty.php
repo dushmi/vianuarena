@@ -43,14 +43,16 @@ function controller_penalty() {
         $data['round_id'] = getattr($_POST, 'round_id');
         // check contest_id
         if ($data['round_id']) {
-            $round_id = round_get($data['round_id']);
-            if (!$round_id) {
+            $round = round_get($data['round_id']);
+            if (!$round) {
                 $errors['round_id'] = 'Nu exista runda cu acest '.'id';
             }
         }
         
         if (isset($user) && isset($round_id)) {
-            redirect(url_penalty_edit($user, $round_id));
+            redirect(url_penalty_edit($user['id'], $round['id']));
+        } else {
+            flash_error('Trebuie sa completezi ambele campuri!');
         }
 
     }
