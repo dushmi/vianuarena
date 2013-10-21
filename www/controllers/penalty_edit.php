@@ -7,37 +7,35 @@ require_once(IA_ROOT_DIR."common/user.php");
 require_once(IA_ROOT_DIR."common/email.php");
 
 function controller_penalty_edit() {
-    #global $identity_user;
+    global $identity_user;
 
     //security check
-    #$changer_name = getattr($identity_user, 'username');
-    #$changer = user_get_by_username($changer_name);
+    $changer_name = getattr($identity_user, 'username');
+    $changer = user_get_by_username($changer_name);
     
-    #if (!user_is_admin($changer))
-    #   redirect(url_home());
+    if (!user_is_admin($changer))
+       redirect(url_home());
 
-    $view = array();
-    $view['title'] = 'Penalty Edit';
+    $user_id = request('user_id');
+    $round_id = request('round_id');
 
-    execute_view_die('views/penalty_edit.php', $view);
+    if (!$user_id || !$round_id)
+        redirect(url_penalty());
 
-    #$user_id = request('user_id');
-    #$round_id = request('round_id');
-
-    #if (!$user_id || !$round_id)
-    #    redirect(url_penalty());
-
-    #controller_penalty_solve($user_id, $round_id);
+    controller_penalty_solve($user_id, $round_id);
 }
 
 function controller_penalty_solve($user_id, $round_id) {
     #$scores = scores_get_by_user_id_and_round_id($user_id, $round_id);
     #$total_score = total_score_get_by_user_id_and_round_id($user_id, $round_id);
 
-    #foreach ($scores as $task_id)
-        #$view[$task_id] = $scores['score']; 
+    $view = array();
+    $view['title'] = 'Penalty Edit';
 
-    execute_view_die('views/penalty_edit.php');#, $view);
+    #foreach ($scores as $task_id)
+        #$view['tasks'][$task_id] = $scores['score']; 
+
+    execute_view_die('views/penalty_edit.php', $view);
 }
 
 ?>
