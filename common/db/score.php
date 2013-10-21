@@ -509,7 +509,8 @@ function total_score_get_by_user_id_and_round_id($user_id, $round_id) {
     $query = sprintf("SELECT * FROM 'ia_score_user_round'
                       WHERE 'user_id' = %s AND 'round_id' LIKE %s",
                       db_escape($user_id), db_quote($round_id));
+    echo("WTF");
     $total_score = db_fetch($query);
-    echo("WTF".$total_score);
+    echo("WTF");
     return $total_score;
 }
