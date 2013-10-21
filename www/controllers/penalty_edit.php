@@ -27,15 +27,15 @@ function controller_penalty_edit($user_id, $round_id) {
     print ($user_id + ' ' + $round_id) 
 
     // submit?
-    $submit = request_is_post();
+    #$submit = request_is_post();
 
-    if ($submit) {
+    #if ($submit) {
         // 1. validate
 
-    }
-    else {
+    #}
+    #else {
         // initial display of form
-    }
+    #}
 
     // page title
     $view = array();

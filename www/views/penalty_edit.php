@@ -8,7 +8,7 @@
 
 <form action="<?= html_escape(url_penalty_edit()) ?>" method="post" class="login clear">
 <fieldset>
-    <legend>Date generale</legend>
+    <legend>Probleme</legend>
     <ul class="form">
         <li>
             <label for="form_username">Nume utilizator</label>
