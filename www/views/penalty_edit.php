@@ -7,7 +7,7 @@
 <p>Modifica punctajele per problema pentru utilizatorul</p>
 
 <?php 
-echo "Modifica punctajele per problema pentru utilizatorul ".$view['user'];
+echo "Modifica punctajele per problema pentru utilizatorul ".$view['user']['username'];
 echo "<h2>Scor total: ".$view['total_score']."</h2>"; 
 
 echo '<form action="<?= html_escape(url_penalty()) ?>" method="post" class="login clear">';
