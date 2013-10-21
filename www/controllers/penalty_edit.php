@@ -7,16 +7,18 @@ require_once(IA_ROOT_DIR."common/user.php");
 require_once(IA_ROOT_DIR."common/email.php");
 
 function controller_penalty_edit() {
-    global $identity_user;
+    #global $identity_user;
 
     //security check
-    $changer_name = getattr($identity_user, 'username');
-    $changer = user_get_by_username($changer_name);
+    #$changer_name = getattr($identity_user, 'username');
+    #$changer = user_get_by_username($changer_name);
     
-    if (!user_is_admin($changer))
-        redirect(url_home());
+    #if (!user_is_admin($changer))
+    #   redirect(url_home());
 
-    execute_view_die('views/penalty_edit.php');
+    $view = array();
+
+    execute_view_die('views/penalty_edit.php', $view);
 
     #$user_id = request('user_id');
     #$round_id = request('round_id');
