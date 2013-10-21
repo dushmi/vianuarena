@@ -31,7 +31,8 @@ function controller_penalty_solve($user_id, $round_id) {
 
     $view = array();
     $view['title'] = 'Penalty Edit';
-    $view['total_score'] = $total_score
+    $view['total_score'] = $total_score;
+    $view['tasks'] = array();
 
     foreach ($scores as $task_id)
         $view['tasks'][$task_id] = $scores['score']; 
