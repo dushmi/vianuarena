@@ -501,7 +501,8 @@ function scores_get_by_user_id_and_round_id($user_id, $round_id) {
     $query = sprintf("SELECT * FROM ia_score_user_round_task
                       WHERE 'user_id' = %s AND 'round_id' = %s",
                       $user_id, $round_id);
-    return db_query($query);
+    $query = sprintf($query, $user_id, $round_id);
+    return db_fetch_all($query);
 
 }
 
@@ -509,5 +510,6 @@ function total_score_get_by_user_id_and_round_id($user_id, $round_id) {
     $query = sprintf("SELECT * FROM ia_score_user_round
                       WHERE 'user_id' = %s AND 'round_id' = %s",
                       $user_id, $round_id);
+    $query = sprintf($query, $user_id, $round_id);
     return db_query($query);
 }
