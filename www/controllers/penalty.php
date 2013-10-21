@@ -49,7 +49,7 @@ function controller_penalty() {
             }
         }
         
-        if ($user && $round_id) {
+        if (isset($user) && isset($round_id)) {
             redirect(url_penalty_edit($user, $round_id));
         }
 
