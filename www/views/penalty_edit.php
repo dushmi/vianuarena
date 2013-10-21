@@ -6,11 +6,22 @@
 
 <?php 
 echo "Modifica punctajele per problema pentru utilizatorul <b>".$view['user']['username']."</b> la concursul <b>".$view['round']['title']."</b>.";
-echo "<h2>Scor total: ".$view['total_score']."</h2>"; 
 
 echo '<form action="<?= html_escape(url_penalty()) ?>" method="post" class="login clear">';
-foreach ($view['tasks'] as $task)
+echo '<fieldset>';
+echo '<legend>Scor total: '.$view['total_score'].'</legend>';
+echo '<ul class="form">';
+
+foreach ($view['tasks'] as $task) {
+	echo '<li>';
+	echo '<label for="form_'.$task['task_id'].'">'.$task['task_id'].'</label>';
+	echo '<?= ferr_span("'.$task['task_id'].'") ?>';
+	echo '<input type="text" name="username" id="form_username" value="<?= fval("'.$task['task_id'].'") ?>" />';
+	echo '</li>';
+}
         echo $task['task_id']."  ".$task['score']."    ";
+echo '</ul>'
+echo '</fieldset>';
 echo '</form>';
 ?>
 
