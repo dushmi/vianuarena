@@ -422,3 +422,7 @@ function url_newsletter_preview_body($page_name, $rev = null) {
 function url_admin() {
     return url_textblock('admin');
 }
+
+function url_penalty() {
+    return url_comples('penalty');
+}
