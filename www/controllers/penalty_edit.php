@@ -2,13 +2,14 @@
 
 require_once(IA_ROOT_DIR."common/db/smf.php");
 require_once(IA_ROOT_DIR."common/db/user.php");
+require_once(IA_ROOT_DIR."common/db/score.php");
 require_once(IA_ROOT_DIR."common/user.php");
 require_once(IA_ROOT_DIR."common/email.php");
 
 // displays form to identify user. On submit it sends e-mail with confirmation
 // link.
 
-function controller_penalty_edit($user_id, $round_id) {
+function controller_penalty_edit() {
     global $identity_user;
 
     //security check
@@ -18,31 +19,21 @@ function controller_penalty_edit($user_id, $round_id) {
     if (!user_is_admin($changer))
         redirect(url_home());
 
-    // `data` dictionary is a dictionary with data to be displayed by form view
-    #$data = array();
+    $user_id = request('user_id');
+    $round_id = request('round_id');
 
-    // here we store validation errors.
-    // It is a dictionary, indexed by field names
-    #$errors = array();
+    if (!$user_id || !$round_id)
+        redirect(url_penalty());
 
-    // submit?
-    #$submit = request_is_post();
+    controller_penalty_solve($user_id, $round_id);
+}
 
-    #if ($submit) {
-        // 1. validate
+function controller_penalty_solve($user_id, $round_id) {
+    $scores = scores_get_by_user_id_and_round_id($user_id, $round_id);
+    $total_score = total_score_get_by_user_id_and_round_id($user_id, $round_id);
 
-    #}
-    #else {
-        // initial display of form
-    #}
-
-    // page title
-    $view = array();
-    $view['title'] = 'Penalty Edit';
-    $view['form_errors'] = $errors;
-    $view['form_values'] = $data;
-    $view['no_sidebar_login'] = true;
-    #execute_view_die('views/penalty_edit.php', $view);
+    foreach ($scores)
+        $view['task_id'] = 'score'; 
 }
 
 ?>
