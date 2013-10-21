@@ -23,13 +23,12 @@ foreach ($view['tasks'] as $task) {
 echo '</ul>';
 echo '</fieldset>';
 echo '</form>';
+echo '<ul class="form clear">';
+echo '<li>';
+echo '<input type="submit" value="Submit" id="form_submit" class="button important" />';
+echo '</li>';
+echo '</ul>';
 ?>
-
-<ul class="form clear">
-    <li>
-        <input type="submit" value="Submit" id="form_submit" class="button important" />
-    </li>
-</ul>
 
 <?php
     include('footer.php');
