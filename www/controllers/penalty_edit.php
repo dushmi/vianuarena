@@ -8,7 +8,7 @@ require_once(IA_ROOT_DIR."common/email.php");
 // displays form to identify user. On submit it sends e-mail with confirmation
 // link.
 
-function controller_penalty_edit() {
+function controller_penalty_edit($user_id, $round_id) {
     global $identity_user;
 
     //security check
@@ -19,11 +19,11 @@ function controller_penalty_edit() {
         redirect(url_home());
 
     // `data` dictionary is a dictionary with data to be displayed by form view
-    $data = array();
+    #$data = array();
 
     // here we store validation errors.
     // It is a dictionary, indexed by field names
-    $errors = array();
+    #$errors = array();
 
     // submit?
     #$submit = request_is_post();
