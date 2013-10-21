@@ -498,10 +498,12 @@ function score_get_rankings($rounds, $tasks, $start = 0, $count = 999999,
 
 
 function scores_get_by_user_id_and_round_id($user_id, $round_id) {
-    $query = sprintf("SELECT * FROM ia_score_user_round_task
+    $query = sprintf("SELECT *
+                      FROM ia_score_user_round_task
                       WHERE user_id = %s AND round_id = %s",
-                      db_quote($user_id), db_escape($round_id));
-    return db_fetch_all($query);
+                     db_quote($user_id), db_quote($round_id));
+    $scores = db_fetch_all($query);
+    return $scores;
 
 }
 
@@ -510,9 +512,6 @@ function total_score_get_by_user_id_and_round_id($user_id, $round_id) {
                       FROM ia_score_user_round
                       WHERE user_id = %s AND round_id = %s",
                      db_quote($user_id), db_quote($round_id));
-    echo($query);
-    echo("WTF");
     $total_score = db_fetch($query);
-    echo("WTF");
     return $total_score;
 }
