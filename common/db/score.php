@@ -509,5 +509,5 @@ function total_score_get_by_user_id_and_round_id($user_id, $round_id) {
     $query = sprintf("SELECT * FROM ia_score_user_round
                       WHERE 'user_id' = %s AND 'round_id' = %s",
                       db_escape($user_id), db_escape($round_id));
-    return db_query($query);
+    return db_fetch($query);
 }
