@@ -6,9 +6,6 @@ require_once(IA_ROOT_DIR."common/db/score.php");
 require_once(IA_ROOT_DIR."common/user.php");
 require_once(IA_ROOT_DIR."common/email.php");
 
-// displays form to identify user. On submit it sends e-mail with confirmation
-// link.
-
 function controller_penalty_edit() {
     global $identity_user;
 
@@ -19,13 +16,15 @@ function controller_penalty_edit() {
     if (!user_is_admin($changer))
         redirect(url_home());
 
-    $user_id = request('user_id');
-    $round_id = request('round_id');
+    execute_view_die('views/penalty_edit.php');
 
-    if (!$user_id || !$round_id)
-        redirect(url_penalty());
+    #$user_id = request('user_id');
+    #$round_id = request('round_id');
 
-    controller_penalty_solve($user_id, $round_id);
+    #if (!$user_id || !$round_id)
+    #    redirect(url_penalty());
+
+    #controller_penalty_solve($user_id, $round_id);
 }
 
 function controller_penalty_solve($user_id, $round_id) {
