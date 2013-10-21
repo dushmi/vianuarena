@@ -22,22 +22,31 @@ function controller_penalty_edit() {
     if (!$user_id || !$round_id)
         redirect(url_penalty());
 
-    
-
     controller_penalty_solve($user_id, $round_id);
 }
 
 function controller_penalty_solve($user_id, $round_id) {
+    //needed info
     $scores = scores_get_by_user_id_and_round_id($user_id, $round_id);
     $total_score = total_score_get_by_user_id_and_round_id($user_id, $round_id);
 
+    //submit?!
+    $submit = request_is_post();
+
+    if ($submit) {
+        foreach ($scores as $task) {
+            $task['score'] = getattr($_POST, $task['task_id']);
+            score_update_by_user_id_and_round_id($user_id, $round_id, $task);
+        }
+    }
+
+    //page data
     $view = array();
     $view['title'] = 'Penalty Edit';
     $view['total_score'] = $total_score['score'];
     $view['tasks'] = $scores;
     $view['user'] = user_get_by_id($user_id);
     $view['round'] = round_get($round_id);
-
     execute_view_die('views/penalty_edit.php', $view);
 }
 

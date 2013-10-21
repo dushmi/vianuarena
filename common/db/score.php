@@ -515,3 +515,7 @@ function total_score_get_by_user_id_and_round_id($user_id, $round_id) {
     $total_score = db_fetch($query);
     return $total_score;
 }
+
+function score_update_by_user_id_and_round_id($user_id, $round_id, $new_score) {
+    db_update("ia_score_user_round", $new_score, "user_id = ".db_quote($user_id)." AND round_id = ".db_quote($round_id));
+}
