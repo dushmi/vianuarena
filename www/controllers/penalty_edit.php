@@ -22,6 +22,8 @@ function controller_penalty_edit() {
     if (!$user_id || !$round_id)
         redirect(url_penalty());
 
+    
+
     controller_penalty_solve($user_id, $round_id);
 }
 
