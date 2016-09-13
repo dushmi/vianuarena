@@ -206,7 +206,7 @@ if (!$display_only_table) {
     </script>
 
     <p>
-        <input type="checkbox" checked="checked" id="autorefresh" onclick="Monitor_ToggleRefresh(this.checked)" />
+        <input type="checkbox" id="autorefresh" onclick="Monitor_ToggleRefresh(this.checked)" />
         <label for="autorefresh">
             auto refresh monitor
         </label>

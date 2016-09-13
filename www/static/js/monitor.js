@@ -1,6 +1,6 @@
 var Monitor_Url;
-var Monitor_Timeout = 5000; // 5 seconds
-var Monitor_AutoRefresh = true; // enabled by default
+var Monitor_Timeout = 15000; // 15 seconds
+var Monitor_AutoRefresh = false; // disabled by default
 
 function Monitor_Init() {
     $('#autorefresh').prop('checked', Monitor_AutoRefresh);
