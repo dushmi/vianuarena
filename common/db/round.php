@@ -451,7 +451,8 @@ function round_get_many($options) {
         $where[] = "`ia_round`.`id` REGEXP " . db_quote($options["name_regexp"]);
     }
     if (getattr($options, "type")) {
-        $where[] = "`ia_round`.`type` = " . db_quote($options["type"]);
+        // $where[] = "`ia_round`.`type` = " . db_quote($options["type"]);
+        $where[] = "`ia_round`.`type` REGEXP " . db_quote($options["type"]);
     }
 
     // Add a join for username.

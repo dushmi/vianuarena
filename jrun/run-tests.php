@@ -41,7 +41,7 @@ function compile_source($source, $exe)
 {
     global $py_compiler;
     if (strpos($source, ".cpp") === strlen($source) - 4) {
-        system("g++ -Wall -lm -O2 $source --static -o $exe", $ret);
+        system("g++ -std=c++0x -Wall -lm -O2 $source --static -o $exe", $ret);
     } else if (strpos($source, ".c") === strlen($source) - 2) {
         system("gcc -Wall -lm -O2 $source --static -o $exe", $ret);
     } else if (strpos($source, ".py") === strlen($source) - 3) {

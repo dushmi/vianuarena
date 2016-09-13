@@ -36,7 +36,7 @@ function compile_file($input_file_name, $output_file_name, &$compiler_message) {
     $compiler_lines = array(
             // Make sure -lm stays after source file & target output
             'c' => 'gcc -Wall -O2 -static %file_name% -o %exe_name% -lm',
-            'cpp' => 'g++ -Wall -O2 -static %file_name% -o %exe_name% -lm',
+            'cpp' => 'g++ -std=c++0x -Wall -O2 -static %file_name% -o %exe_name% -lm',
             'pas' => 'fpc -O2 -Xs %file_name%',
             'fpc' => 'fpc -O2 -Xs %file_name%',
             'py' => IA_JUDGE_PY_COMPILER.' %file_name% %exe_name%',

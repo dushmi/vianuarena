@@ -36,6 +36,12 @@ class ClassicGrader extends BaseGrader {
         eval_assert(@chmod($userfile, 0555),
                     'Failed to chmod a+x user program');
 
+	//  next paragraph added by cristian on 2013-11-04
+	// Copy user source
+	// $dest_sol = $jaildir . $this->task['id'] . $this->job['compiler_id']
+        eval_assert(@copy(IA_ROOT_DIR.'eval/temp/user.' . $this->job['compiler_id'], $jaildir . $this->task['id'] . '.' . $this->job['compiler_id']),
+                    'Failed to copy user program');
+
         // Run user program on a test case.
         $timelimit = $this->task['timelimit'] * 1000;
         $memlimit = $this->task['memlimit'];
